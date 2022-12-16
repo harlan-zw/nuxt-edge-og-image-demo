@@ -1,9 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import unenv from 'unenv'
 export default defineNuxtConfig({
-    modules: [
-        'nuxt-og-image'
-    ],
+    // modules: [
+    //     'nuxt-og-image'
+    // ],
 
     runtimeConfig: {
         username: 'harlan_zw',
