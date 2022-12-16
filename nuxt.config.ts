@@ -12,6 +12,10 @@ export default defineNuxtConfig({
         }
     },
 
+    ogImage: {
+        runtimeImages: true,
+    },
+
     experimental: {
         componentIslands: true
     },

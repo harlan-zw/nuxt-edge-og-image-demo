@@ -1,5 +1,6 @@
 {
   "private": true,
+  "name": "harlanzw-twitter",
   "scripts": {
     "build": "export NITRO_PRESET=vercel-edge && nuxt build",
     "dev": "nuxt dev",
@@ -10,7 +11,12 @@
   "devDependencies": {
     "nuxt": "npm:nuxt3@latest"
   },
+  "engines": {
+    "node": "14.x"
+  },
   "dependencies": {
-    "nuxt-og-image": "^0.5.0"
+    "chrome-aws-lambda": "10.1.0",
+    "puppeteer-core": "10.1.0",
+    "nuxt-og-image": "^0.5.2"
   }
 }
