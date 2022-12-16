@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
+    "build": "export NITRO_PRESET=vercel-edge && nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -11,7 +11,6 @@
     "nuxt": "npm:nuxt3@latest"
   },
   "dependencies": {
-    "needle": "^3.2.0",
     "nuxt-og-image": "^0.5.0"
   }
 }
