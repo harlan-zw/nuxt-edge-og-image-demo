@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules: [
-        'nuxt-og-image'
+    // 'nuxt-og-image'
     ],
 
     runtimeConfig: {
