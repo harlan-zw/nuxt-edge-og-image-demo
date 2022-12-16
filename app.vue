@@ -13,7 +13,19 @@ if (process.server) {
       "authorization": `Bearer ${runtimeConfig.token}`
     },
   })
-  console.log(data)
+  console.log(await data.json())
+  defineOgImage({
+    runtime: true,
+    component: 'Banner',
+    time: new Date().toLocaleString('en-US', {
+      day: '2-digit',
+      month: 'short',
+      hour: 'numeric',
+      minute: 'numeric',
+      hour12: true
+    }),
+    followsCount: 0 //data?.data[0]?.public_metrics?.followers_count || 0,
+  })
 }
 </script>
 <template>
