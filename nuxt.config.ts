@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import unenv from 'unenv'
 export default defineNuxtConfig({
     modules: [
         'nuxt-og-image'
@@ -18,11 +19,14 @@ export default defineNuxtConfig({
             ['puppeteer', 'bufferutil', 'utf-8-validate'].forEach((name) => {
                 nitroConfig.alias[name] = 'unenv/runtime/mock/proxy'
             })
+            console.log(nitroConfig)
         }
     },
 
     nitro: {
+        node: false,
         preset: 'vercel-edge',
+        unenv: unenv.nodeless
     },
 
     ogImage: {
