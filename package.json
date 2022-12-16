@@ -2,7 +2,7 @@
   "private": true,
   "name": "harlanzw-twitter",
   "scripts": {
-    "build": "export NITRO_PRESET=vercel-edge && nuxt build",
+    "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -10,9 +10,6 @@
   },
   "devDependencies": {
     "nuxt": "npm:nuxt3@latest"
-  },
-  "engines": {
-    "node": "14.x"
   },
   "dependencies": {
     "chrome-aws-lambda": "10.1.0",
